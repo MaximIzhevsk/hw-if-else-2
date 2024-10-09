@@ -56,8 +56,20 @@ public class Main {
         }
         System.out.println();
 
+        //задача 4
 
-
+        int deliveryDistance = 95;
+        int numbersOfDays = 1;
+        String messageDays = "Потребуется дней: ";
+        if (deliveryDistance <= 20) {
+            System.out.println(messageDays + numbersOfDays);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println(messageDays + (numbersOfDays + 1));
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println(messageDays + (numbersOfDays + 2));
+        } else {
+            System.out.println("Доставки нет");
+        }
 
 
     }
