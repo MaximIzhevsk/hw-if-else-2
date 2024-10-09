@@ -83,7 +83,7 @@ public class Main {
 
         if (deliveryDistance <= 100) {
             if (deliveryDistance <= 20) {
-            System.out.println(messageDays + numbersOfDays);
+                System.out.println(messageDays + numbersOfDays);
             } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
                 System.out.println(messageDays + (numbersOfDays + 1));
             } else {
