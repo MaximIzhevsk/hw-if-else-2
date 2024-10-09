@@ -70,6 +70,52 @@ public class Main {
         } else {
             System.out.println("Доставки нет");
         }
+        System.out.println();
+
+        //задача 5
+
+        int monthNumber = 12;
+        String messageSeason = " принадлежит к сезону ";
+        switch (monthNumber) {
+            case 1:
+                System.out.println(monthNumber + "-й месяц (он же январь)" + messageSeason + "зима");
+                break;
+            case 2:
+                System.out.println(monthNumber + "-й месяц (он же февраль)" + messageSeason + "зима");
+                break;
+            case 3:
+                System.out.println(monthNumber + "-й месяц (он же март)" + messageSeason + "весна");
+                break;
+            case 4:
+                System.out.println(monthNumber + "-й месяц (он же апрель)" + messageSeason + "весна");
+                break;
+            case 5:
+                System.out.println(monthNumber + "-й месяц (он же май)" + messageSeason + "весна");
+                break;
+            case 6:
+                System.out.println(monthNumber + "-й месяц (он же июнь)" + messageSeason + "лето");
+                break;
+            case 7:
+                System.out.println(monthNumber + "-й месяц (он же июль)" + messageSeason + "лето");
+                break;
+            case 8:
+                System.out.println(monthNumber + "-й месяц (он же август)" + messageSeason + "лето");
+                break;
+            case 9:
+                System.out.println(monthNumber + "-й месяц (он же сентябрь)" + messageSeason + "осень");
+                break;
+            case 10:
+                System.out.println(monthNumber + "-й месяц (он же октябрь)" + messageSeason + "осень");
+                break;
+            case 11:
+                System.out.println(monthNumber + "-й месяц (он же ноябрь)" + messageSeason + "осень");
+                break;
+            case 12:
+                System.out.println(monthNumber + "-й месяц (он же декабрь)" + messageSeason + "зима");
+                break;
+            default:
+                System.out.println("Номер месяца больше 12");
+        }
 
 
     }
