@@ -4,16 +4,25 @@ public class Main {
         //задача 1
 
         int clientOS = 1;
-        switch (clientOS) {
-            case 0:
-                System.out.println("Установите версию приложения для iOS по ссылке");
-                break;
-            case 1:
-                System.out.println("Установите версию приложения для Android по ссылке");
-                break;
-            default:
-                System.out.println("Неправильно указана операционная система");
+//        switch (clientOS) {
+//            case 0:
+//                System.out.println("Установите версию приложения для iOS по ссылке");
+//                break;
+//            case 1:
+//                System.out.println("Установите версию приложения для Android по ссылке");
+//                break;
+//            default:
+//                System.out.println("Неправильно указана операционная система");
+//        }
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Неправильно указана операционная система");
         }
+
+
         System.out.println();
 
         //задача 2
@@ -24,7 +33,7 @@ public class Main {
         String messageStart = "Установите ";
         String messageLight = "облегченную ";
         String messageEnd = "версию приложения для ";
-        String OS = clientOS == 0? "iOS " : "Android ";
+        String OS = clientOS == 0 ? "iOS " : "Android ";
         String messageLink = "по ссылке";
 
         if (clientOS == 0 && clientDeviceYear < 2015) {
